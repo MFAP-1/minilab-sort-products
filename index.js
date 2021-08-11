@@ -1,6 +1,6 @@
 // WEEK 1 - DAY 2: MINILAB | Filter Products [MFAP-1]
 
-// given array of objects
+// given array of objects. Unaltered.
 const products = [
   {
     id: 1,
