@@ -1,4 +1,4 @@
-// WEEK 1 - DAY 2: MINILAB | Filter Products [MFAP-1]
+// WEEK 1 - DAY 2: MINILAB | Filter Products [MFAP-1 & SANDER]
 
 // given array of objects. Unaltered.
 const products = [
@@ -28,11 +28,8 @@ const products = [
 const filterProducts = category => {
   const filteredArr = [];
   for (let i = 0; i < products.length; i++) {
-    for (let j = 0; j < products[i].tags.length; j++) {
-      if (products[i].tags[j] === category){
-        filteredArr.push(products[i]);
-        break; // increase efficiency. Reducing the number of loops when found.
-      }
+    if (products[i].tags.includes(category)){
+      filteredArr.push(products[i]);
     }
   }
   return filteredArr;
